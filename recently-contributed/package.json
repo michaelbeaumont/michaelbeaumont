@@ -1,0 +1,23 @@
+{
+  "name": "github-recently-contributed",
+  "version": "0.1.0",
+  "description": "Gathers and outputs state about recent contributions",
+  "main": "dist/index.js",
+  "author": {
+    "name": "Michael Beaumont",
+    "email": "mjboamail@gmail.com",
+    "url": "https://github.com/michaelbeaumont"
+  },
+  "scripts": {
+    "build": "ncc build src/index.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.23.0",
+    "typescript": "^3.9.7"
+  }
+}

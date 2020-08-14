@@ -1,0 +1,26 @@
+name: Show recently contributed languages and topics
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '0 5 * * *'
+
+jobs:
+  recent-contributions:
+    runs-on: ubuntu-latest
+    name: Gather and publish stats about recent contributions
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Gather stats about recent contributions
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          template-file: README.md.tmpl
+          output-file: README.md
+        uses: ./recently-contributed
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add README.md
+          git commit -m "Summarize contributions from the last 2 weeks"
+          git push
