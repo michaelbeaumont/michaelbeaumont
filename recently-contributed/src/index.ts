@@ -6,6 +6,25 @@ import { executeTemplate } from "./template";
 import { Topic, Language } from "./types";
 import * as api from "./api";
 
+function getRepositories(
+  result: api.GQLContributionResult
+): api.GQLRepository[] {
+  const commits =
+    result.user.contributionsCollection.commitContributionsByRepository;
+  const prs =
+    result.user.contributionsCollection.pullRequestContributionsByRepository;
+
+  return Object.values(
+    commits.concat(prs).reduce(
+      (acc, contribution) => ({
+        ...acc,
+        [contribution.repository.name]: contribution.repository,
+      }),
+      {} as { [name: string]: api.GQLRepository }
+    )
+  );
+}
+
 async function getContributions(
   octokit: Octokit,
   numDays: number
@@ -19,15 +38,13 @@ async function getContributions(
 }
 
 function getLanguagesAndTopics(
-  result: api.GQLContributionResult
+  repos: api.GQLRepository[]
 ): [Language[], Topic[]] {
-  const contributions =
-    result.user.contributionsCollection.pullRequestContributionsByRepository;
-  const repoLanguages = contributions
-    .map(({ repository }) => repository.primaryLanguage)
+  const repoLanguages = repos
+    .map((r) => r.primaryLanguage)
     .filter((x: unknown) => !!x);
-  const repoTopics = contributions
-    .flatMap(({ repository }) => repository.repositoryTopics.nodes)
+  const repoTopics = repos
+    .flatMap((r) => r.repositoryTopics.nodes)
     .filter((x: unknown) => !!x);
   const languages: Language[] = Object.values(
     repoLanguages.reduce(
@@ -39,7 +56,7 @@ function getLanguagesAndTopics(
           count: ((acc[val.name] || {}).count || 0) + 1,
         },
       }),
-      {} as { [key: string]: Language }
+      {} as { [name: string]: Language }
     )
   ).sort(({ count: a }, { count: b }) => a - b);
   const topicSet: Topic[] = Object.values(
@@ -77,7 +94,8 @@ async function renderTemplate(
   const octokit = github.getOctokit(githubToken);
 
   const contributions = await getContributions(octokit, numDays);
-  const [languages, topics] = getLanguagesAndTopics(contributions);
+  const repositories = getRepositories(contributions);
+  const [languages, topics] = getLanguagesAndTopics(repositories);
   await renderTemplate(templateFile, outputFile, { languages, topics });
 })().catch((e) => {
   console.error(e);

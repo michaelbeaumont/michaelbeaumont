@@ -1407,6 +1407,14 @@ const core = __webpack_require__(186);
 const github = __webpack_require__(438);
 const template_1 = __webpack_require__(802);
 const api = __webpack_require__(229);
+function getRepositories(result) {
+    const commits = result.user.contributionsCollection.commitContributionsByRepository;
+    const prs = result.user.contributionsCollection.pullRequestContributionsByRepository;
+    return Object.values(commits.concat(prs).reduce((acc, contribution) => ({
+        ...acc,
+        [contribution.repository.name]: contribution.repository,
+    }), {}));
+}
 async function getContributions(octokit, numDays) {
     const from = new Date();
     from.setDate(new Date().getDate() - numDays);
@@ -1415,13 +1423,12 @@ async function getContributions(octokit, numDays) {
         from: from.toISOString(),
     });
 }
-function getLanguagesAndTopics(result) {
-    const contributions = result.user.contributionsCollection.pullRequestContributionsByRepository;
-    const repoLanguages = contributions
-        .map(({ repository }) => repository.primaryLanguage)
+function getLanguagesAndTopics(repos) {
+    const repoLanguages = repos
+        .map((r) => r.primaryLanguage)
         .filter((x) => !!x);
-    const repoTopics = contributions
-        .flatMap(({ repository }) => repository.repositoryTopics.nodes)
+    const repoTopics = repos
+        .flatMap((r) => r.repositoryTopics.nodes)
         .filter((x) => !!x);
     const languages = Object.values(repoLanguages.reduce((acc, val) => ({
         ...acc,
@@ -1453,7 +1460,8 @@ async function renderTemplate(templateFile, outputFile, vars) {
     const outputFile = core.getInput("output-file", { required: true });
     const octokit = github.getOctokit(githubToken);
     const contributions = await getContributions(octokit, numDays);
-    const [languages, topics] = getLanguagesAndTopics(contributions);
+    const repositories = getRepositories(contributions);
+    const [languages, topics] = getLanguagesAndTopics(repositories);
     await renderTemplate(templateFile, outputFile, { languages, topics });
 })().catch((e) => {
     console.error(e);
@@ -2169,11 +2177,18 @@ exports.query = `
   query ($login: String!, $from: DateTime!){
     user(login: $login) {
       contributionsCollection(from: $from) {
+       commitContributionsByRepository {
+         repository {
+           name
+           repositoryTopics(first:2) { nodes { url, topic { name }}}
+           primaryLanguage { name, color }
+         }
+       }
        pullRequestContributionsByRepository {
          repository {
-           name,
-           repositoryTopics(first:2) { nodes { url, topic { name }}},
-           primaryLanguage { name, color },
+           name
+           repositoryTopics(first:2) { nodes { url, topic { name }}}
+           primaryLanguage { name, color }
          }
        }
       }
