@@ -2525,6 +2525,7 @@ module.exports = require("assert");
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
+const util = __webpack_require__(669);
 const core = __webpack_require__(186);
 const github = __webpack_require__(438);
 const index = __webpack_require__(144);
@@ -2537,6 +2538,8 @@ const index = __webpack_require__(144);
     const contributions = await index.getContributions(octokit, numDays);
     const repositories = index.getRepositories(contributions);
     const [languages, topics] = index.getLanguagesAndTopics(repositories);
+    core.debug(util.format("Discovered languages:", languages));
+    core.debug(util.format("Discovered topics:", topics));
     await index.renderTemplate(templateFile, outputFile, { languages, topics });
 })().catch((e) => {
     console.error(e);
