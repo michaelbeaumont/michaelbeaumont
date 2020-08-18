@@ -1427,9 +1427,6 @@ function getLanguagesAndTopics(repos) {
     const repoLanguages = repos
         .map((r) => r.primaryLanguage)
         .filter((x) => !!x);
-    const repoTopics = repos
-        .flatMap((r) => r.repositoryTopics.nodes)
-        .filter((x) => !!x);
     const languages = Object.values(repoLanguages.reduce((acc, val) => ({
         ...acc,
         [val.name]: {
@@ -1438,15 +1435,18 @@ function getLanguagesAndTopics(repos) {
             count: ((acc[val.name] || {}).count || 0) + 1,
         },
     }), {})).sort(({ count: a }, { count: b }) => a - b);
-    const topicSet = Object.values(repoTopics.reduce((acc, val) => ({
+    const languageSet = new Set(languages.map((l) => l.name.toLowerCase()));
+    // We get more than 2 topics in our query, in case we end up filtering some out.
+    const repoTopics = repos
+        .flatMap((r) => r.repositoryTopics.nodes.filter((t) => !languageSet.has(t.topic.name)).slice(0, 2))
+        .filter((x) => !!x);
+    const topics = Object.values(repoTopics.reduce((acc, val) => ({
         ...acc,
         [val.topic.name]: {
             name: val.topic.name,
             url: val.url,
         },
     }), {}));
-    const languageSet = new Set(languages.map((l) => l.name.toLowerCase()));
-    const topics = topicSet.filter((t) => !languageSet.has(t.name));
     return [languages, topics];
 }
 async function renderTemplate(templateFile, outputFile, vars) {
@@ -2180,14 +2180,14 @@ exports.query = `
        commitContributionsByRepository {
          repository {
            name
-           repositoryTopics(first:2) { nodes { url, topic { name }}}
+           repositoryTopics(first:4) { nodes { url, topic { name }}}
            primaryLanguage { name, color }
          }
        }
        pullRequestContributionsByRepository {
          repository {
            name
-           repositoryTopics(first:2) { nodes { url, topic { name }}}
+           repositoryTopics(first:4) { nodes { url, topic { name }}}
            primaryLanguage { name, color }
          }
        }

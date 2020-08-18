@@ -24,14 +24,14 @@ export const query = `
        commitContributionsByRepository {
          repository {
            name
-           repositoryTopics(first:2) { nodes { url, topic { name }}}
+           repositoryTopics(first:4) { nodes { url, topic { name }}}
            primaryLanguage { name, color }
          }
        }
        pullRequestContributionsByRepository {
          repository {
            name
-           repositoryTopics(first:2) { nodes { url, topic { name }}}
+           repositoryTopics(first:4) { nodes { url, topic { name }}}
            primaryLanguage { name, color }
          }
        }

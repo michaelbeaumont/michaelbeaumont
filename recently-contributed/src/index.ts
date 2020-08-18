@@ -43,9 +43,6 @@ function getLanguagesAndTopics(
   const repoLanguages = repos
     .map((r) => r.primaryLanguage)
     .filter((x: unknown) => !!x);
-  const repoTopics = repos
-    .flatMap((r) => r.repositoryTopics.nodes)
-    .filter((x: unknown) => !!x);
   const languages: Language[] = Object.values(
     repoLanguages.reduce(
       (acc, val) => ({
@@ -59,7 +56,12 @@ function getLanguagesAndTopics(
       {} as { [name: string]: Language }
     )
   ).sort(({ count: a }, { count: b }) => a - b);
-  const topicSet: Topic[] = Object.values(
+  const languageSet = new Set(languages.map((l) => l.name.toLowerCase()));
+  // We get more than 2 topics in our query, in case we end up filtering some out.
+  const repoTopics = repos
+    .flatMap((r) => r.repositoryTopics.nodes.filter((t) => !languageSet.has(t.topic.name)).slice(0, 2))
+    .filter((x: unknown) => !!x);
+  const topics: Topic[] = Object.values(
     repoTopics.reduce(
       (acc, val) => ({
         ...acc,
@@ -71,8 +73,6 @@ function getLanguagesAndTopics(
       {}
     )
   );
-  const languageSet = new Set(languages.map((l) => l.name.toLowerCase()));
-  const topics = topicSet.filter((t) => !languageSet.has(t.name));
   return [languages, topics];
 }
 
