@@ -40,7 +40,7 @@ module.exports =
 /******/ 	// the startup function
 /******/ 	function startup() {
 /******/ 		// Load entry module and return exports
-/******/ 		return __webpack_require__(144);
+/******/ 		return __webpack_require__(399);
 /******/ 	};
 /******/
 /******/ 	// run startup
@@ -1402,8 +1402,8 @@ module.exports = require("os");
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.renderTemplate = exports.getLanguagesAndTopics = exports.getContributions = exports.getRepositories = void 0;
 const fs_1 = __webpack_require__(747);
-const core = __webpack_require__(186);
 const github = __webpack_require__(438);
 const template_1 = __webpack_require__(802);
 const api = __webpack_require__(229);
@@ -1415,6 +1415,7 @@ function getRepositories(result) {
         [contribution.repository.name]: contribution.repository,
     }), {}));
 }
+exports.getRepositories = getRepositories;
 async function getContributions(octokit, numDays) {
     const from = new Date();
     from.setDate(new Date().getDate() - numDays);
@@ -1423,24 +1424,27 @@ async function getContributions(octokit, numDays) {
         from: from.toISOString(),
     });
 }
+exports.getContributions = getContributions;
 function getLanguagesAndTopics(repos) {
-    const repoLanguages = repos
-        .map((r) => r.primaryLanguage)
-        .filter((x) => !!x);
-    const languages = Object.values(repoLanguages.reduce((acc, val) => ({
+    const languages = Object.values(repos.reduce((acc, { primaryLanguage: l }) => ({
         ...acc,
-        [val.name]: {
-            name: val.name,
-            color: val.color,
-            count: ((acc[val.name] || {}).count || 0) + 1,
-        },
-    }), {})).sort(({ count: a }, { count: b }) => a - b);
+        ...(l
+            ? {
+                [l.name]: {
+                    name: l.name,
+                    color: l.color || "gray",
+                    count: ((acc[l.name] || {}).count || 0) + 1,
+                },
+            }
+            : {}),
+    }), {})).sort(({ count: a }, { count: b }) => b - a);
     const languageSet = new Set(languages.map((l) => l.name.toLowerCase()));
     // We get more than 2 topics in our query, in case we end up filtering some out.
-    const repoTopics = repos
-        .flatMap((r) => r.repositoryTopics.nodes.filter((t) => !languageSet.has(t.topic.name)).slice(0, 2))
-        .filter((x) => !!x);
-    const topics = Object.values(repoTopics.reduce((acc, val) => ({
+    const topics = Object.values(repos
+        .flatMap((r) => r.repositoryTopics.nodes
+        .filter((t) => !languageSet.has(t.topic.name))
+        .slice(0, 2))
+        .reduce((acc, val) => ({
         ...acc,
         [val.topic.name]: {
             name: val.topic.name,
@@ -1449,24 +1453,12 @@ function getLanguagesAndTopics(repos) {
     }), {}));
     return [languages, topics];
 }
+exports.getLanguagesAndTopics = getLanguagesAndTopics;
 async function renderTemplate(templateFile, outputFile, vars) {
     const template = await fs_1.promises.readFile(templateFile);
     await fs_1.promises.writeFile(outputFile, template_1.executeTemplate(template, vars));
 }
-(async function () {
-    const githubToken = core.getInput("github-token", { required: true });
-    const numDays = parseInt(core.getInput("days"));
-    const templateFile = core.getInput("template-file", { required: true });
-    const outputFile = core.getInput("output-file", { required: true });
-    const octokit = github.getOctokit(githubToken);
-    const contributions = await getContributions(octokit, numDays);
-    const repositories = getRepositories(contributions);
-    const [languages, topics] = getLanguagesAndTopics(repositories);
-    await renderTemplate(templateFile, outputFile, { languages, topics });
-})().catch((e) => {
-    console.error(e);
-    core.setFailed(e.toString());
-});
+exports.renderTemplate = renderTemplate;
 
 
 /***/ }),
@@ -2524,6 +2516,33 @@ function escapeProperty(s) {
 /***/ (function(module) {
 
 module.exports = require("assert");
+
+/***/ }),
+
+/***/ 399:
+/***/ (function(__unusedmodule, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+const core = __webpack_require__(186);
+const github = __webpack_require__(438);
+const index = __webpack_require__(144);
+(async function () {
+    const githubToken = core.getInput("github-token", { required: true });
+    const numDays = parseInt(core.getInput("days"));
+    const templateFile = core.getInput("template-file", { required: true });
+    const outputFile = core.getInput("output-file", { required: true });
+    const octokit = github.getOctokit(githubToken);
+    const contributions = await index.getContributions(octokit, numDays);
+    const repositories = index.getRepositories(contributions);
+    const [languages, topics] = index.getLanguagesAndTopics(repositories);
+    await index.renderTemplate(templateFile, outputFile, { languages, topics });
+})().catch((e) => {
+    console.error(e);
+    core.setFailed(e.toString());
+});
+
 
 /***/ }),
 

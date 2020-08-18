@@ -9,7 +9,7 @@
     "url": "https://github.com/michaelbeaumont"
   },
   "scripts": {
-    "build": "ncc build src/index.ts"
+    "build": "ncc build src/main.ts"
   },
   "license": "MIT",
   "dependencies": {
