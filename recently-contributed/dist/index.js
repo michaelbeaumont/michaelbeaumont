@@ -2179,21 +2179,23 @@ exports.query = `
       contributionsCollection(from: $from) {
        commitContributionsByRepository {
          repository {
-           name
-           repositoryTopics(first:4) { nodes { url, topic { name }}}
-           primaryLanguage { name, color }
+           ...repoFields
          }
        }
        pullRequestContributionsByRepository {
          repository {
-           name
-           repositoryTopics(first:4) { nodes { url, topic { name }}}
-           primaryLanguage { name, color }
+           ...repoFields
          }
        }
       }
     }
-  }`;
+  }
+  fragment repoFields on Repository {
+    name
+    repositoryTopics(first:4) { nodes { url, topic { name }}}
+    primaryLanguage { name, color }
+  }
+  `;
 
 
 /***/ }),
