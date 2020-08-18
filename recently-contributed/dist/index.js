@@ -5282,7 +5282,7 @@ exports.Octokit = Octokit;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.executeTemplate = void 0;
+exports.executeTemplate = exports.joinWithFinalSep = void 0;
 function makeShield(message, color, link) {
     if (link) {
         const img = `<img src="https://img.shields.io/static/v1?label=&message=${message}&color=${color}" alt=${message}/>`;
@@ -5297,6 +5297,7 @@ function joinWithFinalSep(ss, sep, finalSep) {
     const init = ss.slice(0, -1);
     return `${init.join(sep)}${init.length ? finalSep : ""}${last}`;
 }
+exports.joinWithFinalSep = joinWithFinalSep;
 function executeTemplate(template, args) {
     const vars = {
         ...args,

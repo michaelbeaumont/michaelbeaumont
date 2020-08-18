@@ -1,6 +1,10 @@
+export interface GQLRepositoryLanguage {
+  name: string;
+  color: string | null;
+}
 export interface GQLRepository {
   name: string;
-  primaryLanguage: { name: string; color: string };
+  primaryLanguage: GQLRepositoryLanguage | null;
   repositoryTopics: { nodes: { url: string; topic: { name: string } }[] };
 }
 

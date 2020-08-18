@@ -9,7 +9,7 @@ function makeShield(message: string, color: string, link: string): string {
   }
 }
 
-function joinWithFinalSep(ss: string[], sep: string, finalSep: string): string {
+export function joinWithFinalSep(ss: string[], sep: string, finalSep: string): string {
   const last = ss[ss.length - 1];
   const init = ss.slice(0, -1);
   return `${init.join(sep)}${init.length ? finalSep : ""}${last}`;
