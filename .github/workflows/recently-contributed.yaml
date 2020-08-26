@@ -2,6 +2,11 @@ name: Show recently contributed languages and topics
 
 on:
   workflow_dispatch: {}
+  push:
+    branches:
+      - master
+    paths:
+      - "README.md.tmpl"
   schedule:
     - cron: '0 5 * * *'
 
