@@ -1,5 +1,13 @@
-In the past 2 weeks I've contributed to ${this.joinWithFinalSep(
-  this.languages.map(({name, color}) => this.makeShield(name, color)), ", ", " and "
-)} repositories with topics like ${this.joinWithFinalSep(
-  this.topics.map(({name, url}) => this.makeShield(name, "blue", url)), ", ", " and "
-)}.
+Hi there, I'm **Mike**, a ![software engineer](https://img.shields.io/static/v1?style=flat-square&label=&message=software%20engineer&color=navy) and ![OSS contributor](https://img.shields.io/static/v1?style=flat-square&label=&message=OSS%20contributor&color=navy)! In the past couple of weeks, I've contributed to repos with:
+
+###### Languages
+
+${this.joinWithFinalSep(
+  this.languages.map(({name, color}) => this.makeShield(name, color, "", true)), " ", " "
+)}
+
+###### Topics
+
+${this.joinWithFinalSep(
+  this.topics.map(({name, url}) => this.makeShield(name, "blue", url)), " ", " "
+)}
