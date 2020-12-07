@@ -6610,6 +6610,7 @@ function makeShield(message, color, link, useLogo = false) {
             ]
             : [],
         [
+            ["style", "flat-square"],
             ["label", ""],
             ["message", message],
             ["color", encodeURIComponent(color)],

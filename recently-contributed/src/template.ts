@@ -55,6 +55,7 @@ export function makeShield(
         ]
       : [],
     [
+      ["style", "flat-square"],
       ["label", ""],
       ["message", message],
       ["color", encodeURIComponent(color)],
