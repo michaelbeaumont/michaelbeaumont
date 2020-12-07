@@ -12,7 +12,7 @@ inputs:
     required: true
   days:
     description: 'Number of days to look in the past'
-    default: 14
+    default: 28
 runs:
   using: 'node12'
   main: 'dist/index.js'
