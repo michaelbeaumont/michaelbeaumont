@@ -2,7 +2,7 @@ Hi there, I'm **Mike**, a ![software engineer](https://img.shields.io/static/v1?
 
 ###### Languages
 
-![Rust](https://img.shields.io/static/v1?logo=Rust&logoColor=%23333&style=flat-square&label=&message=Rust&color=%23dea584) ![TypeScript](https://img.shields.io/static/v1?logo=TypeScript&logoColor=%23fff&style=flat-square&label=&message=TypeScript&color=%232b7489) ![Haskell](https://img.shields.io/static/v1?logo=Haskell&logoColor=%23fff&style=flat-square&label=&message=Haskell&color=%235e5086) ![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![Shell](https://img.shields.io/static/v1?logo=gnu%20bash&logoColor=%23333&style=flat-square&label=&message=Shell&color=%2389e051) ![JavaScript](https://img.shields.io/static/v1?logo=JavaScript&logoColor=%23333&style=flat-square&label=&message=JavaScript&color=%23f1e05a)
+![TypeScript](https://img.shields.io/static/v1?logo=TypeScript&logoColor=%23fff&style=flat-square&label=&message=TypeScript&color=%232b7489) ![Rust](https://img.shields.io/static/v1?logo=Rust&logoColor=%23333&style=flat-square&label=&message=Rust&color=%23dea584) ![Haskell](https://img.shields.io/static/v1?logo=Haskell&logoColor=%23fff&style=flat-square&label=&message=Haskell&color=%235e5086) ![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![Shell](https://img.shields.io/static/v1?logo=gnu%20bash&logoColor=%23333&style=flat-square&label=&message=Shell&color=%2389e051) ![JavaScript](https://img.shields.io/static/v1?logo=JavaScript&logoColor=%23333&style=flat-square&label=&message=JavaScript&color=%23f1e05a)
 
 ###### Topics
 
