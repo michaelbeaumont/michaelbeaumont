@@ -2,7 +2,7 @@ Hi there, I'm **Mike**, a ![software engineer](https://img.shields.io/static/v1?
 
 ###### Languages
 
-![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![HCL](https://img.shields.io/static/v1?logo=HCL&logoColor=%23fff&style=flat-square&label=&message=HCL&color=gray)
+![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![HCL](https://img.shields.io/static/v1?logo=HCL&logoColor=%23fff&style=flat-square&label=&message=HCL&color=gray) ![Python](https://img.shields.io/static/v1?logo=Python&logoColor=%23fff&style=flat-square&label=&message=Python&color=%233572A5)
 
 ###### Topics
 
