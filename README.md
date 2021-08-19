@@ -2,8 +2,8 @@ Hi there, I'm **Mike**, a ![software engineer](https://img.shields.io/static/v1?
 
 ###### Languages
 
-![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![HCL](https://img.shields.io/static/v1?logo=HCL&logoColor=%23fff&style=flat-square&label=&message=HCL&color=gray) ![Python](https://img.shields.io/static/v1?logo=Python&logoColor=%23fff&style=flat-square&label=&message=Python&color=%233572A5)
+![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![Python](https://img.shields.io/static/v1?logo=Python&logoColor=%23fff&style=flat-square&label=&message=Python&color=%233572A5)
 
 ###### Topics
 
-<a href="https://github.com/topics/ocpp"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=ocpp&color=blue" alt=ocpp/></a> <a href="https://github.com/topics/electric-vehicles"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=electric-vehicles&color=blue" alt=electric-vehicles/></a> <a href="https://github.com/topics/wireguard"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=wireguard&color=blue" alt=wireguard/></a> <a href="https://github.com/topics/terraform"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=terraform&color=blue" alt=terraform/></a>
+<a href="https://github.com/topics/ocpp"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=ocpp&color=blue" alt=ocpp/></a> <a href="https://github.com/topics/electric-vehicles"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=electric-vehicles&color=blue" alt=electric-vehicles/></a>
