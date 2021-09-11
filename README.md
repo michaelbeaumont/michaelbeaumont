@@ -2,8 +2,8 @@ Hi there, I'm **Mike**, a ![software engineer](https://img.shields.io/static/v1?
 
 ###### Languages
 
-![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![TypeScript](https://img.shields.io/static/v1?logo=TypeScript&logoColor=%23fff&style=flat-square&label=&message=TypeScript&color=%232b7489)
+![TypeScript](https://img.shields.io/static/v1?logo=TypeScript&logoColor=%23fff&style=flat-square&label=&message=TypeScript&color=%232b7489) ![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8)
 
 ###### Topics
 
-<a href="https://github.com/topics/ocpp"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=ocpp&color=blue" alt=ocpp/></a> <a href="https://github.com/topics/electric-vehicles"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=electric-vehicles&color=blue" alt=electric-vehicles/></a>
+undefined
