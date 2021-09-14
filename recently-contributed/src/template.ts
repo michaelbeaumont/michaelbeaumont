@@ -79,7 +79,7 @@ export function joinWithFinalSep(
 ): string {
   const last = ss[ss.length - 1];
   const init = ss.slice(0, -1);
-  return `${init.join(sep)}${init.length ? finalSep : ""}${last}`;
+  return `${init.join(sep)}${init.length ? finalSep : ""}${last ? last : ""}`;
 }
 
 export function executeTemplate(template: string | Buffer, args: {}) {
