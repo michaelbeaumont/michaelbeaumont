@@ -6,6 +6,11 @@ describe("joinWithFinalSep", () => {
       template.joinWithFinalSep(["first", "second", "third"], ", ", " and ")
     ).toStrictEqual("first, second and third");
   });
+  it("empty", () => {
+    expect(
+      template.joinWithFinalSep([], ", ", " and ")
+    ).toStrictEqual("");
+  });
 });
 
 describe("makeShield", () => {

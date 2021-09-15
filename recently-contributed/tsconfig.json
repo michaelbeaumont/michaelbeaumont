@@ -2,6 +2,7 @@
   "compilerOptions": {
     "lib": ["es2020"],
     "module": "commonjs",
+    "moduleResolution": "node",
     "target": "es2019",
     "strict": true,
     "noFallthroughCasesInSwitch": true,
