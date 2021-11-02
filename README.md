@@ -2,7 +2,7 @@ Hi there, I'm **Mike**, a ![software engineer](https://img.shields.io/static/v1?
 
 ###### Languages
 
-![Lua](https://img.shields.io/static/v1?logo=Lua&logoColor=%23fff&style=flat-square&label=&message=Lua&color=%23000080) ![HTML](https://img.shields.io/static/v1?logo=HTML&logoColor=%23fff&style=flat-square&label=&message=HTML&color=%23e34c26) ![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![JavaScript](https://img.shields.io/static/v1?logo=JavaScript&logoColor=%23333&style=flat-square&label=&message=JavaScript&color=%23f1e05a) ![TypeScript](https://img.shields.io/static/v1?logo=TypeScript&logoColor=%23fff&style=flat-square&label=&message=TypeScript&color=%232b7489)
+![Lua](https://img.shields.io/static/v1?logo=Lua&logoColor=%23fff&style=flat-square&label=&message=Lua&color=%23000080) ![HTML](https://img.shields.io/static/v1?logo=HTML&logoColor=%23fff&style=flat-square&label=&message=HTML&color=%23e34c26) ![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![JavaScript](https://img.shields.io/static/v1?logo=JavaScript&logoColor=%23333&style=flat-square&label=&message=JavaScript&color=%23f1e05a)
 
 ###### Topics
 
