@@ -6958,7 +6958,7 @@ exports.query = `
     }
   }
   fragment repoFields on Repository {
-    name
+    nameWithOwner
     repositoryTopics(first:4) { nodes { url, topic { name }}}
     primaryLanguage { name, color }
   }
@@ -6983,7 +6983,7 @@ function getRepositories(result) {
     const prs = result.user.contributionsCollection.pullRequestContributionsByRepository;
     return Object.values(commits.concat(prs).reduce((acc, contribution) => ({
         ...acc,
-        [contribution.repository.name]: contribution.repository,
+        [contribution.repository.nameWithOwner]: contribution.repository,
     }), {}));
 }
 exports.getRepositories = getRepositories;

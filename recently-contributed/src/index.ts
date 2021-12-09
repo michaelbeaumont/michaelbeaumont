@@ -17,7 +17,7 @@ export function getRepositories(
     commits.concat(prs).reduce(
       (acc, contribution) => ({
         ...acc,
-        [contribution.repository.name]: contribution.repository,
+        [contribution.repository.nameWithOwner]: contribution.repository,
       }),
       {} as { [name: string]: api.GQLRepository }
     )
