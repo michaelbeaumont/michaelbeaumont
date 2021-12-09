@@ -3,7 +3,7 @@ export interface GQLRepositoryLanguage {
   color: string | null;
 }
 export interface GQLRepository {
-  name: string;
+  nameWithOwner: string;
   primaryLanguage: GQLRepositoryLanguage | null;
   repositoryTopics: { nodes: { url: string; topic: { name: string } }[] };
 }
@@ -39,7 +39,7 @@ export const query = `
     }
   }
   fragment repoFields on Repository {
-    name
+    nameWithOwner
     repositoryTopics(first:4) { nodes { url, topic { name }}}
     primaryLanguage { name, color }
   }

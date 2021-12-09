@@ -8,18 +8,23 @@ describe("getLanguagesAndTopics", () => {
     expect(
       index.getLanguagesAndTopics([
         {
-          name: "ts1",
+          nameWithOwner: "user/ts1",
           primaryLanguage: { name: "ts", color: "blue" },
           repositoryTopics: { nodes: [] },
         },
         {
-          name: "rust1",
+          nameWithOwner: "user/rust1",
           primaryLanguage: { name: "rust", color: "red" },
           repositoryTopics: { nodes: [] },
         },
         {
-          name: "ts2",
+          nameWithOwner: "user/ts2",
           primaryLanguage: { name: "ts", color: "blue" },
+          repositoryTopics: { nodes: [] },
+        },
+        {
+          nameWithOwner: "fork/ts1",
+          primaryLanguage: null,
           repositoryTopics: { nodes: [] },
         },
       ])[0]
@@ -40,7 +45,7 @@ describe("getLanguagesAndTopics", () => {
     expect(
       index.getLanguagesAndTopics([
         {
-          name: "ts1",
+          nameWithOwner: "user/ts1",
           primaryLanguage: { name: "ts", color: "blue" },
           repositoryTopics: {
             nodes: [
@@ -52,9 +57,14 @@ describe("getLanguagesAndTopics", () => {
           },
         },
         {
-          name: "rust1",
+          nameWithOwner: "user/rust1",
           primaryLanguage: { name: "rust", color: "red" },
           repositoryTopics: { nodes: [{ topic: { name: "z" }, url: "/z" }] },
+        },
+        {
+          nameWithOwner: "fork/rust1",
+          primaryLanguage: { name: "rust", color: "red" },
+          repositoryTopics: { nodes: [] },
         },
       ])[1]
     ).toStrictEqual([
