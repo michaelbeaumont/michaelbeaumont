@@ -41,9 +41,9 @@ jobs:
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-      - name: Commit
+      - name: Push changes
         run: |
           git add -u
-          git commit -m "Rebuild recently-contributed"
-      - name: Push
-        run: git push
+          if git commit -m "Rebuild recently-contributed"; then
+            git push
+          fi
