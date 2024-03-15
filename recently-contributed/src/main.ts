@@ -15,10 +15,9 @@ import * as index from "./index";
 
   const contributions = await index.getContributions(octokit, numDays);
   const repositories = index.getRepositories(contributions);
-  const [languages, topics] = index.getLanguagesAndTopics(
-    repositories,
+  const [languages, topics] = index.getLanguagesAndTopics(repositories, {
     skipPrivateTopics,
-  );
+  });
   core.debug(util.format("Discovered languages:", languages));
   core.debug(util.format("Discovered topics:", topics));
   await index.renderTemplate(templateFile, outputFile, { languages, topics });
