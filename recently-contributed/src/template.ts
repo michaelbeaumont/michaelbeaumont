@@ -16,16 +16,17 @@ function brightness(color: string) {
     const rgb = cssColorConverter.fromString(color).toRgbaArray();
     if (rgb) {
       return +((rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 255000).toFixed(
-        2
+        2,
       );
     }
   }
   return 0;
 }
 
-function colorsForBackground(
-  color: string
-): { textColor: string; shadowColor: string } {
+function colorsForBackground(color: string): {
+  textColor: string;
+  shadowColor: string;
+} {
   if (brightness(color) <= brightnessThreshold) {
     return {
       textColor: "#fff",
@@ -42,7 +43,7 @@ export function makeShield(
   message: string,
   color: string,
   link: string,
-  useLogo: boolean = false
+  useLogo: boolean = false,
 ): string {
   const params = [
     useLogo
@@ -75,7 +76,7 @@ export function makeShield(
 export function joinWithFinalSep(
   ss: string[],
   sep: string,
-  finalSep: string
+  finalSep: string,
 ): string {
   const last = ss[ss.length - 1];
   const init = ss.slice(0, -1);

@@ -6,7 +6,7 @@ import { Topic, Language } from "./types";
 import * as api from "./api";
 
 export function getRepositories(
-  result: api.GQLContributionResult
+  result: api.GQLContributionResult,
 ): api.GQLRepository[] {
   const commits =
     result.user.contributionsCollection.commitContributionsByRepository;
@@ -19,14 +19,14 @@ export function getRepositories(
         ...acc,
         [contribution.repository.nameWithOwner]: contribution.repository,
       }),
-      {} as { [name: string]: api.GQLRepository }
-    )
+      {} as { [name: string]: api.GQLRepository },
+    ),
   );
 }
 
 export async function getContributions(
   octokit: Octokit,
-  numDays: number
+  numDays: number,
 ): Promise<api.GQLContributionResult> {
   const from = new Date();
   from.setDate(new Date().getDate() - numDays);
@@ -38,7 +38,7 @@ export async function getContributions(
 
 export function getLanguagesAndTopics(
   repos: api.GQLRepository[],
-  { skipPrivateTopics } : { skipPrivateTopics?: boolean },
+  { skipPrivateTopics }: { skipPrivateTopics?: boolean },
 ): [Language[], Topic[]] {
   const languages: Language[] = Object.values(
     repos.reduce(
@@ -54,20 +54,20 @@ export function getLanguagesAndTopics(
             }
           : {}),
       }),
-      {} as { [name: string]: Language }
-    )
+      {} as { [name: string]: Language },
+    ),
   ).sort(({ count: a }, { count: b }) => b - a);
   const languageSet = new Set(languages.map((l) => l.name.toLowerCase()));
   // We get more than 2 topics in our query, in case we end up filtering some out.
   if (skipPrivateTopics) {
-    repos = repos.filter(r => !r.isPrivate);
+    repos = repos.filter((r) => !r.isPrivate);
   }
   const topics: Topic[] = Object.values(
     repos
       .flatMap((r) =>
         r.repositoryTopics.nodes
           .filter((t) => !languageSet.has(t.topic.name))
-          .slice(0, 2)
+          .slice(0, 2),
       )
       .reduce(
         (acc, val) => ({
@@ -77,8 +77,8 @@ export function getLanguagesAndTopics(
             url: val.url,
           },
         }),
-        {}
-      )
+        {},
+      ),
   );
   return [languages, topics];
 }
@@ -86,7 +86,7 @@ export function getLanguagesAndTopics(
 export async function renderTemplate(
   templateFile: string,
   outputFile: string,
-  vars: {}
+  vars: {},
 ): Promise<void> {
   const template = await fs.readFile(templateFile);
   await fs.writeFile(outputFile, executeTemplate(template, vars));
