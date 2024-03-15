@@ -6,6 +6,7 @@ export interface GQLRepository {
   nameWithOwner: string;
   primaryLanguage: GQLRepositoryLanguage | null;
   repositoryTopics: { nodes: { url: string; topic: { name: string } }[] };
+  isPrivate: boolean;
 }
 
 export interface GQLRepositoryContribution {
@@ -42,5 +43,6 @@ export const query = `
     nameWithOwner
     repositoryTopics(first:4) { nodes { url, topic { name }}}
     primaryLanguage { name, color }
+    isPrivate
   }
   `;
