@@ -37,7 +37,8 @@ export async function getContributions(
 }
 
 export function getLanguagesAndTopics(
-  repos: api.GQLRepository[]
+  repos: api.GQLRepository[],
+  { skipPrivateTopics } : { skipPrivateTopics?: boolean },
 ): [Language[], Topic[]] {
   const languages: Language[] = Object.values(
     repos.reduce(
@@ -58,6 +59,9 @@ export function getLanguagesAndTopics(
   ).sort(({ count: a }, { count: b }) => b - a);
   const languageSet = new Set(languages.map((l) => l.name.toLowerCase()));
   // We get more than 2 topics in our query, in case we end up filtering some out.
+  if (skipPrivateTopics) {
+    repos = repos.filter(r => !r.isPrivate);
+  }
   const topics: Topic[] = Object.values(
     repos
       .flatMap((r) =>
