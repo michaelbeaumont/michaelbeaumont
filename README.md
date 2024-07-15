@@ -2,7 +2,7 @@ Hi there, I'm **Mike**, a ![software engineer](https://img.shields.io/static/v1?
 
 ###### Languages
 
-![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![SCSS](https://img.shields.io/static/v1?logo=SCSS&logoColor=%23fff&style=flat-square&label=&message=SCSS&color=%23c6538c) ![Makefile](https://img.shields.io/static/v1?logo=Makefile&logoColor=%23fff&style=flat-square&label=&message=Makefile&color=%23427819) ![C++](https://img.shields.io/static/v1?logo=C%2B%2B&logoColor=%23fff&style=flat-square&label=&message=C++&color=%23f34b7d)
+![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![SCSS](https://img.shields.io/static/v1?logo=SCSS&logoColor=%23fff&style=flat-square&label=&message=SCSS&color=%23c6538c) ![Rust](https://img.shields.io/static/v1?logo=Rust&logoColor=%23333&style=flat-square&label=&message=Rust&color=%23dea584) ![Makefile](https://img.shields.io/static/v1?logo=Makefile&logoColor=%23fff&style=flat-square&label=&message=Makefile&color=%23427819) ![C++](https://img.shields.io/static/v1?logo=C%2B%2B&logoColor=%23fff&style=flat-square&label=&message=C++&color=%23f34b7d)
 
 ###### Topics
 
