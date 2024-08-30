@@ -21,7 +21,7 @@ jobs:
       - name: Run tests
         run: npm test
   rebuild:
-    if: github.ref_name == 'master'
+    if: github.ref_name == 'main'
     name: Rebuild
     runs-on: ubuntu-latest
     defaults:
