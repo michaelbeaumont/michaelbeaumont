@@ -1,3 +1,5 @@
+import { Org } from "./types";
+
 const cssColorConverter = require("css-color-converter");
 
 const brightnessThreshold = 0.69;
@@ -37,6 +39,36 @@ function colorsForBackground(color: string): {
     textColor: "#333",
     shadowColor: "#ccc",
   };
+}
+
+export function makeOrgTable(orgs: Org[]): string {
+  const mkImg = (org: Org) =>
+    `<img width="100" src="${org.avatarUrl}" alt=${org.login}/>`;
+  return `
+<table>
+  <tbody>
+    <tr>
+    ${joinWithFinalSep(
+      orgs.map(
+        (org) =>
+          `<td align="center"><a href="${org.url}">${mkImg(org)}</a></td>`,
+      ),
+      "\n",
+      "\n",
+    )}
+    </tr>
+    <tr>
+    ${joinWithFinalSep(
+      orgs.map(
+        (org) => `<td align="center"><strong>${org.login}</strong></td>`,
+      ),
+      "\n",
+      "\n",
+    )}
+    </tr>
+  </tbody>
+</table>
+`;
 }
 
 export function makeShield(
@@ -87,6 +119,7 @@ export function executeTemplate(template: string | Buffer, args: {}) {
   const vars = {
     ...args,
     makeShield,
+    makeOrgTable,
     joinWithFinalSep,
   };
   return new Function(`return \`${template}\`;`).call(vars);

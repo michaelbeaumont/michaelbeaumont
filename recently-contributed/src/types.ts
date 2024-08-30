@@ -7,3 +7,8 @@ export interface Topic {
   name: string;
   url: string;
 }
+export interface Org {
+  login: string;
+  url: string;
+  avatarUrl: string;
+}

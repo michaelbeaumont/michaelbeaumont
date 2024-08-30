@@ -1,9 +1,10 @@
-import { promises as fs } from "fs";
 import * as github from "@actions/github";
 import { Octokit } from "@octokit/core";
-import { executeTemplate } from "./template";
-import { Topic, Language } from "./types";
+import { promises as fs } from "fs";
+
 import * as api from "./api";
+import { executeTemplate } from "./template";
+import { Language, Org, Topic } from "./types";
 
 export function getRepositories(
   result: api.GQLContributionResult,
@@ -36,10 +37,10 @@ export async function getContributions(
   });
 }
 
-export function getLanguagesAndTopics(
+export function getRepoInfo(
   repos: api.GQLRepository[],
   { skipPrivateTopics }: { skipPrivateTopics?: boolean },
-): [Language[], Topic[]] {
+): [Language[], Topic[], Org[]] {
   const languages: Language[] = Object.values(
     repos.reduce(
       (acc, { primaryLanguage: l }) => ({
@@ -58,7 +59,8 @@ export function getLanguagesAndTopics(
     ),
   ).sort(({ count: a }, { count: b }) => b - a);
   const languageSet = new Set(languages.map((l) => l.name.toLowerCase()));
-  // We get more than 2 topics in our query, in case we end up filtering some out.
+  // We get more than 2 topics in our query, in case we end up filtering some
+  // out.
   if (skipPrivateTopics) {
     repos = repos.filter((r) => !r.isPrivate);
   }
@@ -80,7 +82,20 @@ export function getLanguagesAndTopics(
         {},
       ),
   );
-  return [languages, topics];
+  const orgs: Org[] = Object.values(
+    repos
+      .map((r) => r.owner)
+      .filter((t) => t.__typename === "Organization")
+      .map(({ login, avatarUrl, url }) => ({ login, avatarUrl, url }))
+      .reduce(
+        (acc, val) => ({
+          ...acc,
+          [val.login]: val,
+        }),
+        {},
+      ),
+  );
+  return [languages, topics, orgs];
 }
 
 export async function renderTemplate(
