@@ -10,7 +10,7 @@ In the past couple of weeks, some contributions I've made are to:
 
 ###### Topics
 
-<a href="https://github.com/topics/service-mesh"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=service-mesh&color=blue" alt=service-mesh/></a> <a href="https://github.com/topics/golang"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=golang&color=blue" alt=golang/></a> <a href="https://github.com/topics/bare-metal"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=bare-metal&color=blue" alt=bare-metal/></a> <a href="https://github.com/topics/cloudflare"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=cloudflare&color=blue" alt=cloudflare/></a> <a href="https://github.com/topics/vuejs"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=vuejs&color=blue" alt=vuejs/></a> <a href="https://github.com/topics/vuepress"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=vuepress&color=blue" alt=vuepress/></a> <a href="https://github.com/topics/kubernetes"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=kubernetes&color=blue" alt=kubernetes/></a> <a href="https://github.com/topics/storage"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=storage&color=blue" alt=storage/></a>
+<a href="https://github.com/topics/service-mesh"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=service-mesh&color=blue" alt=service-mesh/></a> <a href="https://github.com/topics/golang"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=golang&color=blue" alt=golang/></a> <a href="https://github.com/topics/bare-metal"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=bare-metal&color=blue" alt=bare-metal/></a> <a href="https://github.com/topics/cloudflare"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=cloudflare&color=blue" alt=cloudflare/></a> <a href="https://github.com/topics/kubernetes"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=kubernetes&color=blue" alt=kubernetes/></a> <a href="https://github.com/topics/storage"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=storage&color=blue" alt=storage/></a> <a href="https://github.com/topics/vuejs"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=vuejs&color=blue" alt=vuejs/></a> <a href="https://github.com/topics/vuepress"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=vuepress&color=blue" alt=vuepress/></a>
 
 ###### Organizations
 
@@ -19,15 +19,15 @@ In the past couple of weeks, some contributions I've made are to:
   <tbody>
     <tr>
     <td align="center"><a href="https://github.com/kumahq"><img width="100" src="https://avatars.githubusercontent.com/u/67433617?v=4" alt=kumahq/></a></td>
+<td align="center"><a href="https://github.com/backube"><img width="100" src="https://avatars.githubusercontent.com/u/47803932?v=4" alt=backube/></a></td>
 <td align="center"><a href="https://github.com/openebs"><img width="100" src="https://avatars.githubusercontent.com/u/20769039?v=4" alt=openebs/></a></td>
 <td align="center"><a href="https://github.com/siderolabs"><img width="100" src="https://avatars.githubusercontent.com/u/13804887?v=4" alt=siderolabs/></a></td>
-<td align="center"><a href="https://github.com/backube"><img width="100" src="https://avatars.githubusercontent.com/u/47803932?v=4" alt=backube/></a></td>
     </tr>
     <tr>
     <td align="center"><strong>kumahq</strong></td>
+<td align="center"><strong>backube</strong></td>
 <td align="center"><strong>openebs</strong></td>
 <td align="center"><strong>siderolabs</strong></td>
-<td align="center"><strong>backube</strong></td>
     </tr>
   </tbody>
 </table>
