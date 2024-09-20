@@ -21,13 +21,11 @@ In the past couple of weeks, some contributions I've made are to:
     <td align="center"><a href="https://github.com/kumahq"><img width="100" src="https://avatars.githubusercontent.com/u/67433617?v=4" alt=kumahq/></a></td>
 <td align="center"><a href="https://github.com/backube"><img width="100" src="https://avatars.githubusercontent.com/u/47803932?v=4" alt=backube/></a></td>
 <td align="center"><a href="https://github.com/openebs"><img width="100" src="https://avatars.githubusercontent.com/u/20769039?v=4" alt=openebs/></a></td>
-<td align="center"><a href="https://github.com/siderolabs"><img width="100" src="https://avatars.githubusercontent.com/u/13804887?v=4" alt=siderolabs/></a></td>
     </tr>
     <tr>
     <td align="center"><strong>kumahq</strong></td>
 <td align="center"><strong>backube</strong></td>
 <td align="center"><strong>openebs</strong></td>
-<td align="center"><strong>siderolabs</strong></td>
     </tr>
   </tbody>
 </table>
