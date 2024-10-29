@@ -6,7 +6,7 @@ In the past couple of weeks, some contributions I've made are to:
 
 ###### Languages
 
-![Rust](https://img.shields.io/static/v1?logo=Rust&logoColor=%23333&style=flat-square&label=&message=Rust&color=%23dea584) ![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![SCSS](https://img.shields.io/static/v1?logo=SCSS&logoColor=%23fff&style=flat-square&label=&message=SCSS&color=%23c6538c) ![HCL](https://img.shields.io/static/v1?logo=HCL&logoColor=%23fff&style=flat-square&label=&message=HCL&color=%23844FBA) ![HTML](https://img.shields.io/static/v1?logo=HTML&logoColor=%23fff&style=flat-square&label=&message=HTML&color=%23e34c26)
+![Rust](https://img.shields.io/static/v1?logo=Rust&logoColor=%23333&style=flat-square&label=&message=Rust&color=%23dea584) ![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![SCSS](https://img.shields.io/static/v1?logo=SCSS&logoColor=%23fff&style=flat-square&label=&message=SCSS&color=%23c6538c) ![HCL](https://img.shields.io/static/v1?logo=HCL&logoColor=%23fff&style=flat-square&label=&message=HCL&color=%23844FBA) ![HTML](https://img.shields.io/static/v1?logo=HTML&logoColor=%23fff&style=flat-square&label=&message=HTML&color=%23e34c26) ![Shell](https://img.shields.io/static/v1?logo=gnu%20bash&logoColor=%23333&style=flat-square&label=&message=Shell&color=%2389e051)
 
 ###### Topics
 
