@@ -19,13 +19,13 @@ In the past couple of weeks, some contributions I've made are to:
   <tbody>
     <tr>
     <td align="center"><a href="https://github.com/kumahq"><img width="100" src="https://avatars.githubusercontent.com/u/67433617?v=4" alt=kumahq/></a></td>
-<td align="center"><a href="https://github.com/openebs"><img width="100" src="https://avatars.githubusercontent.com/u/20769039?v=4" alt=openebs/></a></td>
 <td align="center"><a href="https://github.com/Kong"><img width="100" src="https://avatars.githubusercontent.com/u/962416?v=4" alt=Kong/></a></td>
+<td align="center"><a href="https://github.com/openebs"><img width="100" src="https://avatars.githubusercontent.com/u/20769039?v=4" alt=openebs/></a></td>
     </tr>
     <tr>
     <td align="center"><strong>kumahq</strong></td>
-<td align="center"><strong>openebs</strong></td>
 <td align="center"><strong>Kong</strong></td>
+<td align="center"><strong>openebs</strong></td>
     </tr>
   </tbody>
 </table>
