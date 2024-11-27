@@ -6,7 +6,7 @@ In the past couple of weeks, some contributions I've made are to:
 
 ###### Languages
 
-![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![C](https://img.shields.io/static/v1?logo=C&logoColor=%23fff&style=flat-square&label=&message=C&color=%23555555) ![HCL](https://img.shields.io/static/v1?logo=HCL&logoColor=%23fff&style=flat-square&label=&message=HCL&color=%23844FBA) ![Makefile](https://img.shields.io/static/v1?logo=Makefile&logoColor=%23fff&style=flat-square&label=&message=Makefile&color=%23427819) ![SCSS](https://img.shields.io/static/v1?logo=SCSS&logoColor=%23fff&style=flat-square&label=&message=SCSS&color=%23c6538c) ![Rust](https://img.shields.io/static/v1?logo=Rust&logoColor=%23333&style=flat-square&label=&message=Rust&color=%23dea584) ![Shell](https://img.shields.io/static/v1?logo=gnu%20bash&logoColor=%23333&style=flat-square&label=&message=Shell&color=%2389e051)
+![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![C](https://img.shields.io/static/v1?logo=C&logoColor=%23fff&style=flat-square&label=&message=C&color=%23555555) ![Makefile](https://img.shields.io/static/v1?logo=Makefile&logoColor=%23fff&style=flat-square&label=&message=Makefile&color=%23427819) ![HCL](https://img.shields.io/static/v1?logo=HCL&logoColor=%23fff&style=flat-square&label=&message=HCL&color=%23844FBA) ![SCSS](https://img.shields.io/static/v1?logo=SCSS&logoColor=%23fff&style=flat-square&label=&message=SCSS&color=%23c6538c) ![Rust](https://img.shields.io/static/v1?logo=Rust&logoColor=%23333&style=flat-square&label=&message=Rust&color=%23dea584)
 
 ###### Topics
 
