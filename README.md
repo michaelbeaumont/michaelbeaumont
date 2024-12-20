@@ -18,7 +18,7 @@ In the past couple of weeks, some contributions I've made are to:
 <table>
   <tbody>
     <tr>
-    <td align="center"><a href="https://github.com/kumahq"><img width="100" src="https://avatars.githubusercontent.com/u/67433617?v=4" alt=kumahq/></a></td>
+    <td align="center"><a href="https://github.com/kumahq"><img width="100" src="https://private-avatars.githubusercontent.com/u/67433617?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NzE3MDAsIm5iZiI6MTczNDY3MDUwMCwicGF0aCI6Ii91LzY3NDMzNjE3In0.zwjzIjYpH5EU1PEwawykIt0FsV5jOI2wS9fFE-Y58mk&v=4" alt=kumahq/></a></td>
     </tr>
     <tr>
     <td align="center"><strong>kumahq</strong></td>
