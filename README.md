@@ -10,7 +10,7 @@ In the past couple of weeks, some contributions I've made are to:
 
 ###### Topics
 
-<a href="https://github.com/topics/service-mesh"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=service-mesh&color=blue" alt=service-mesh/></a> <a href="https://github.com/topics/golang"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=golang&color=blue" alt=golang/></a> <a href="https://github.com/topics/vuejs"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=vuejs&color=blue" alt=vuejs/></a> <a href="https://github.com/topics/vuepress"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=vuepress&color=blue" alt=vuepress/></a>
+<a href="https://github.com/topics/kubernetes"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=kubernetes&color=blue" alt=kubernetes/></a> <a href="https://github.com/topics/amazon-web-services"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=amazon-web-services&color=blue" alt=amazon-web-services/></a> <a href="https://github.com/topics/service-mesh"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=service-mesh&color=blue" alt=service-mesh/></a> <a href="https://github.com/topics/golang"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=golang&color=blue" alt=golang/></a> <a href="https://github.com/topics/vuejs"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=vuejs&color=blue" alt=vuejs/></a> <a href="https://github.com/topics/vuepress"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=vuepress&color=blue" alt=vuepress/></a>
 
 ###### Organizations
 
@@ -18,10 +18,12 @@ In the past couple of weeks, some contributions I've made are to:
 <table>
   <tbody>
     <tr>
-    <td align="center"><a href="https://github.com/kumahq"><img width="100" src="https://avatars.githubusercontent.com/u/67433617?v=4" alt=kumahq/></a></td>
+    <td align="center"><a href="https://github.com/eksctl-io"><img width="100" src="https://avatars.githubusercontent.com/u/126004790?v=4" alt=eksctl-io/></a></td>
+<td align="center"><a href="https://github.com/kumahq"><img width="100" src="https://avatars.githubusercontent.com/u/67433617?v=4" alt=kumahq/></a></td>
     </tr>
     <tr>
-    <td align="center"><strong>kumahq</strong></td>
+    <td align="center"><strong>eksctl-io</strong></td>
+<td align="center"><strong>kumahq</strong></td>
     </tr>
   </tbody>
 </table>
