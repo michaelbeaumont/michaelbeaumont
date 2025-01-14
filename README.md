@@ -6,11 +6,11 @@ In the past couple of weeks, some contributions I've made are to:
 
 ###### Languages
 
-![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![SCSS](https://img.shields.io/static/v1?logo=SCSS&logoColor=%23fff&style=flat-square&label=&message=SCSS&color=%23c6538c)
+![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8)
 
 ###### Topics
 
-<a href="https://github.com/topics/kubernetes"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=kubernetes&color=blue" alt=kubernetes/></a> <a href="https://github.com/topics/amazon-web-services"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=amazon-web-services&color=blue" alt=amazon-web-services/></a> <a href="https://github.com/topics/service-mesh"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=service-mesh&color=blue" alt=service-mesh/></a> <a href="https://github.com/topics/golang"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=golang&color=blue" alt=golang/></a> <a href="https://github.com/topics/vuejs"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=vuejs&color=blue" alt=vuejs/></a> <a href="https://github.com/topics/vuepress"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=vuepress&color=blue" alt=vuepress/></a>
+<a href="https://github.com/topics/kubernetes"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=kubernetes&color=blue" alt=kubernetes/></a> <a href="https://github.com/topics/amazon-web-services"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=amazon-web-services&color=blue" alt=amazon-web-services/></a> <a href="https://github.com/topics/service-mesh"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=service-mesh&color=blue" alt=service-mesh/></a> <a href="https://github.com/topics/golang"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=golang&color=blue" alt=golang/></a>
 
 ###### Organizations
 
