@@ -6,11 +6,11 @@ In the past couple of weeks, some contributions I've made are to:
 
 ###### Languages
 
-![HCL](https://img.shields.io/static/v1?logo=HCL&logoColor=%23fff&style=flat-square&label=&message=HCL&color=%23844FBA)
+![HCL](https://img.shields.io/static/v1?logo=HCL&logoColor=%23fff&style=flat-square&label=&message=HCL&color=%23844FBA) ![Rust](https://img.shields.io/static/v1?logo=Rust&logoColor=%23333&style=flat-square&label=&message=Rust&color=%23dea584) ![Dockerfile](https://img.shields.io/static/v1?logo=Dockerfile&logoColor=%23fff&style=flat-square&label=&message=Dockerfile&color=%23384d54)
 
 ###### Topics
 
-<a href="https://github.com/topics/bare-metal"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=bare-metal&color=blue" alt=bare-metal/></a> <a href="https://github.com/topics/cloudflare"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=cloudflare&color=blue" alt=cloudflare/></a>
+<a href="https://github.com/topics/bare-metal"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=bare-metal&color=blue" alt=bare-metal/></a> <a href="https://github.com/topics/cloudflare"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=cloudflare&color=blue" alt=cloudflare/></a> <a href="https://github.com/topics/sat"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=sat&color=blue" alt=sat/></a> <a href="https://github.com/topics/sat-solver"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=sat-solver&color=blue" alt=sat-solver/></a>
 
 ###### Organizations
 
