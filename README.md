@@ -10,7 +10,7 @@ In the past couple of weeks, some contributions I've made are to:
 
 ###### Topics
 
-<a href="https://github.com/topics/bare-metal"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=bare-metal&color=blue" alt=bare-metal/></a> <a href="https://github.com/topics/cloudflare"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=cloudflare&color=blue" alt=cloudflare/></a> <a href="https://github.com/topics/kubernetes"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=kubernetes&color=blue" alt=kubernetes/></a> <a href="https://github.com/topics/amazon-web-services"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=amazon-web-services&color=blue" alt=amazon-web-services/></a> <a href="https://github.com/topics/npm"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=npm&color=blue" alt=npm/></a> <a href="https://github.com/topics/package-management"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=package-management&color=blue" alt=package-management/></a> <a href="https://github.com/topics/sat"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=sat&color=blue" alt=sat/></a> <a href="https://github.com/topics/sat-solver"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=sat-solver&color=blue" alt=sat-solver/></a> <a href="https://github.com/topics/async-foundations"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=async-foundations&color=blue" alt=async-foundations/></a> <a href="https://github.com/topics/rest-api"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=rest-api&color=blue" alt=rest-api/></a> <a href="https://github.com/topics/rest-client"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=rest-client&color=blue" alt=rest-client/></a>
+<a href="https://github.com/topics/bare-metal"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=bare-metal&color=blue" alt=bare-metal/></a> <a href="https://github.com/topics/cloudflare"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=cloudflare&color=blue" alt=cloudflare/></a> <a href="https://github.com/topics/kubernetes"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=kubernetes&color=blue" alt=kubernetes/></a> <a href="https://github.com/topics/amazon-web-services"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=amazon-web-services&color=blue" alt=amazon-web-services/></a> <a href="https://github.com/topics/npm"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=npm&color=blue" alt=npm/></a> <a href="https://github.com/topics/package-management"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=package-management&color=blue" alt=package-management/></a> <a href="https://github.com/topics/async-foundations"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=async-foundations&color=blue" alt=async-foundations/></a> <a href="https://github.com/topics/rest-api"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=rest-api&color=blue" alt=rest-api/></a> <a href="https://github.com/topics/rest-client"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=rest-client&color=blue" alt=rest-client/></a>
 
 ###### Organizations
 
@@ -19,15 +19,15 @@ In the past couple of weeks, some contributions I've made are to:
   <tbody>
     <tr>
     <td align="center"><a href="https://github.com/eksctl-io"><img width="100" src="https://avatars.githubusercontent.com/u/126004790?v=4" alt=eksctl-io/></a></td>
-<td align="center"><a href="https://github.com/renovatebot"><img width="100" src="https://avatars.githubusercontent.com/u/38656520?v=4" alt=renovatebot/></a></td>
 <td align="center"><a href="https://github.com/Kong"><img width="100" src="https://avatars.githubusercontent.com/u/962416?v=4" alt=Kong/></a></td>
+<td align="center"><a href="https://github.com/renovatebot"><img width="100" src="https://avatars.githubusercontent.com/u/38656520?v=4" alt=renovatebot/></a></td>
 <td align="center"><a href="https://github.com/rust-lang"><img width="100" src="https://avatars.githubusercontent.com/u/5430905?v=4" alt=rust-lang/></a></td>
 <td align="center"><a href="https://github.com/OpenAPITools"><img width="100" src="https://avatars.githubusercontent.com/u/37325267?v=4" alt=OpenAPITools/></a></td>
     </tr>
     <tr>
     <td align="center"><strong>eksctl-io</strong></td>
-<td align="center"><strong>renovatebot</strong></td>
 <td align="center"><strong>Kong</strong></td>
+<td align="center"><strong>renovatebot</strong></td>
 <td align="center"><strong>rust-lang</strong></td>
 <td align="center"><strong>OpenAPITools</strong></td>
     </tr>
