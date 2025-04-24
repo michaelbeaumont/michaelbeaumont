@@ -10,7 +10,7 @@ In the past couple of weeks, some contributions I've made are to:
 
 ###### Topics
 
-<a href="https://github.com/topics/rust-lang"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=rust-lang&color=blue" alt=rust-lang/></a> <a href="https://github.com/topics/tracing"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=tracing&color=blue" alt=tracing/></a>
+<a href="https://github.com/topics/embedded-hal-driver"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=embedded-hal-driver&color=blue" alt=embedded-hal-driver/></a> <a href="https://github.com/topics/embedded-hal"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=embedded-hal&color=blue" alt=embedded-hal/></a> <a href="https://github.com/topics/rust-lang"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=rust-lang&color=blue" alt=rust-lang/></a> <a href="https://github.com/topics/tracing"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=tracing&color=blue" alt=tracing/></a>
 
 ###### Organizations
 
