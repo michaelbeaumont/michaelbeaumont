@@ -19,9 +19,11 @@ In the past couple of weeks, some contributions I've made are to:
   <tbody>
     <tr>
     <td align="center"><a href="https://github.com/envoyproxy"><img width="100" src="https://avatars.githubusercontent.com/u/30125649?v=4" alt=envoyproxy/></a></td>
+<td align="center"><a href="https://github.com/Kong"><img width="100" src="https://avatars.githubusercontent.com/u/962416?v=4" alt=Kong/></a></td>
     </tr>
     <tr>
     <td align="center"><strong>envoyproxy</strong></td>
+<td align="center"><strong>Kong</strong></td>
     </tr>
   </tbody>
 </table>
