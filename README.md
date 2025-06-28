@@ -10,7 +10,7 @@ In the past couple of weeks, some contributions I've made are to:
 
 ###### Topics
 
-<a href="https://github.com/topics/bare-metal"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=bare-metal&color=blue" alt=bare-metal/></a> <a href="https://github.com/topics/cloudflare"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=cloudflare&color=blue" alt=cloudflare/></a> <a href="https://github.com/topics/chacha20-poly1305"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=chacha20-poly1305&color=blue" alt=chacha20-poly1305/></a> <a href="https://github.com/topics/talos"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=talos&color=blue" alt=talos/></a> <a href="https://github.com/topics/envoy"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=envoy&color=blue" alt=envoy/></a> <a href="https://github.com/topics/kubernetes"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=kubernetes&color=blue" alt=kubernetes/></a>
+<a href="https://github.com/topics/bare-metal"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=bare-metal&color=blue" alt=bare-metal/></a> <a href="https://github.com/topics/cloudflare"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=cloudflare&color=blue" alt=cloudflare/></a> <a href="https://github.com/topics/envoy"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=envoy&color=blue" alt=envoy/></a> <a href="https://github.com/topics/kubernetes"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=kubernetes&color=blue" alt=kubernetes/></a>
 
 ###### Organizations
 
