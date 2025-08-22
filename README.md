@@ -20,12 +20,10 @@ In the past couple of weeks, some contributions I've made are to:
     <tr>
     <td align="center"><a href="https://github.com/fluxcd-community"><img width="100" src="https://avatars.githubusercontent.com/u/81581744?v=4" alt=fluxcd-community/></a></td>
 <td align="center"><a href="https://github.com/Kong"><img width="100" src="https://avatars.githubusercontent.com/u/962416?v=4" alt=Kong/></a></td>
-<td align="center"><a href="https://github.com/cel-rust"><img width="100" src="https://avatars.githubusercontent.com/u/220928027?v=4" alt=cel-rust/></a></td>
     </tr>
     <tr>
     <td align="center"><strong>fluxcd-community</strong></td>
 <td align="center"><strong>Kong</strong></td>
-<td align="center"><strong>cel-rust</strong></td>
     </tr>
   </tbody>
 </table>
