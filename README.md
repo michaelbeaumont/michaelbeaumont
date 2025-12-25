@@ -6,7 +6,7 @@ In the past couple of weeks, some contributions I've made are to:
 
 ###### Languages
 
-![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![Rust](https://img.shields.io/static/v1?logo=Rust&logoColor=%23333&style=flat-square&label=&message=Rust&color=%23dea584) ![HCL](https://img.shields.io/static/v1?logo=HCL&logoColor=%23fff&style=flat-square&label=&message=HCL&color=%23844FBA) ![C](https://img.shields.io/static/v1?logo=C&logoColor=%23fff&style=flat-square&label=&message=C&color=%23555555)
+![Go](https://img.shields.io/static/v1?logo=Go&logoColor=%23fff&style=flat-square&label=&message=Go&color=%2300ADD8) ![HCL](https://img.shields.io/static/v1?logo=HCL&logoColor=%23fff&style=flat-square&label=&message=HCL&color=%23844FBA) ![Rust](https://img.shields.io/static/v1?logo=Rust&logoColor=%23333&style=flat-square&label=&message=Rust&color=%23dea584) ![C](https://img.shields.io/static/v1?logo=C&logoColor=%23fff&style=flat-square&label=&message=C&color=%23555555)
 
 ###### Topics
 
