@@ -10,7 +10,7 @@ In the past couple of weeks, some contributions I've made are to:
 
 ###### Topics
 
-<a href="https://github.com/topics/bare-metal"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=bare-metal&color=blue" alt=bare-metal/></a> <a href="https://github.com/topics/cloudflare"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=cloudflare&color=blue" alt=cloudflare/></a> <a href="https://github.com/topics/zfs"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=zfs&color=blue" alt=zfs/></a> <a href="https://github.com/topics/zfsonlinux"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=zfsonlinux&color=blue" alt=zfsonlinux/></a> <a href="https://github.com/topics/chacha20-poly1305"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=chacha20-poly1305&color=blue" alt=chacha20-poly1305/></a> <a href="https://github.com/topics/talos"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=talos&color=blue" alt=talos/></a> <a href="https://github.com/topics/kubernetes"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=kubernetes&color=blue" alt=kubernetes/></a> <a href="https://github.com/topics/amazon-web-services"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=amazon-web-services&color=blue" alt=amazon-web-services/></a> <a href="https://github.com/topics/extensions"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=extensions&color=blue" alt=extensions/></a>
+<a href="https://github.com/topics/bare-metal"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=bare-metal&color=blue" alt=bare-metal/></a> <a href="https://github.com/topics/cloudflare"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=cloudflare&color=blue" alt=cloudflare/></a> <a href="https://github.com/topics/zfs"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=zfs&color=blue" alt=zfs/></a> <a href="https://github.com/topics/zfsonlinux"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=zfsonlinux&color=blue" alt=zfsonlinux/></a> <a href="https://github.com/topics/chacha20-poly1305"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=chacha20-poly1305&color=blue" alt=chacha20-poly1305/></a> <a href="https://github.com/topics/talos"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=talos&color=blue" alt=talos/></a> <a href="https://github.com/topics/extensions"><img src="https://img.shields.io/static/v1?style=flat-square&label=&message=extensions&color=blue" alt=extensions/></a>
 
 ###### Organizations
 
@@ -19,12 +19,10 @@ In the past couple of weeks, some contributions I've made are to:
   <tbody>
     <tr>
     <td align="center"><a href="https://github.com/openebs"><img width="100" src="https://avatars.githubusercontent.com/u/20769039?v=4" alt=openebs/></a></td>
-<td align="center"><a href="https://github.com/eksctl-io"><img width="100" src="https://avatars.githubusercontent.com/u/126004790?v=4" alt=eksctl-io/></a></td>
 <td align="center"><a href="https://github.com/siderolabs"><img width="100" src="https://avatars.githubusercontent.com/u/13804887?v=4" alt=siderolabs/></a></td>
     </tr>
     <tr>
     <td align="center"><strong>openebs</strong></td>
-<td align="center"><strong>eksctl-io</strong></td>
 <td align="center"><strong>siderolabs</strong></td>
     </tr>
   </tbody>
