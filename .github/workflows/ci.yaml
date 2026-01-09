@@ -12,10 +12,10 @@ jobs:
         working-directory: recently-contributed
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+        uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
-          node-version: "16"
+          node-version: "24"
       - name: Install packages
         run: npm install
       - name: Run tests
@@ -29,10 +29,10 @@ jobs:
         working-directory: recently-contributed
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+        uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
-          node-version: "16"
+          node-version: "24"
       - name: Install packages
         run: npm install
       - name: Run build
