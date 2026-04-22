@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^3.0.0",
-    "@actions/github": "^7.0.0",
+    "@actions/github": "^9.1.1",
     "css-color-converter": "^2.0.0"
   },
   "devDependencies": {
