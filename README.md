@@ -10,12 +10,12 @@ In the past couple of weeks: ![TypeScript](https://img.shields.io/static/v1?logo
 <table>
   <tbody>
     <tr>
-    <td align="center"><a href="https://github.com/chainguard-dev"><img width="100" src="https://avatars.githubusercontent.com/u/87436699?v=4" alt=chainguard-dev/></a></td>
-<td align="center"><a href="https://github.com/Kong"><img width="100" src="https://avatars.githubusercontent.com/u/962416?v=4" alt=Kong/></a></td>
+    <td align="center"><a href="https://github.com/Kong"><img width="100" src="https://avatars.githubusercontent.com/u/962416?v=4" alt=Kong/></a></td>
+<td align="center"><a href="https://github.com/chainguard-dev"><img width="100" src="https://avatars.githubusercontent.com/u/87436699?v=4" alt=chainguard-dev/></a></td>
     </tr>
     <tr>
-    <td align="center"><strong>chainguard-dev</strong></td>
-<td align="center"><strong>Kong</strong></td>
+    <td align="center"><strong>Kong</strong></td>
+<td align="center"><strong>chainguard-dev</strong></td>
     </tr>
   </tbody>
 </table>
