@@ -1,3 +1,4 @@
+import {describe, expect, test, it} from '@jest/globals';
 import * as template from "./template";
 
 describe("joinWithFinalSep", () => {
