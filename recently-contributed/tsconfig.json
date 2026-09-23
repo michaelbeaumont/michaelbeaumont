@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "rootDir": "./src",
     "lib": ["es2020"],
     "module": "es2022",
     "moduleResolution": "bundler",
