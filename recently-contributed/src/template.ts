@@ -1,6 +1,5 @@
+import { colord } from "colord";
 import { Org } from "./types";
-
-const cssColorConverter = require("css-color-converter");
 
 const brightnessThreshold = 0.69;
 
@@ -13,23 +12,12 @@ function getLogoName(text: string): string {
   return encodeURIComponent(logos[text] ?? text);
 }
 
-function brightness(color: string) {
-  if (color) {
-    const rgb = cssColorConverter.fromString(color).toRgbaArray();
-    if (rgb) {
-      return +((rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 255000).toFixed(
-        2,
-      );
-    }
-  }
-  return 0;
-}
-
 function colorsForBackground(color: string): {
   textColor: string;
   shadowColor: string;
 } {
-  if (brightness(color) <= brightnessThreshold) {
+  const brightness = color ? colord(color).brightness() : 0;
+  if (brightness <= brightnessThreshold) {
     return {
       textColor: "#fff",
       shadowColor: "#010101",
