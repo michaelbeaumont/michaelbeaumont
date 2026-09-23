@@ -10,13 +10,13 @@
   },
   "scripts": {
     "build": "ncc build src/main.ts",
-    "test": "jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^3.0.1",
     "@actions/github": "^7.0.0",
-    "css-color-converter": "^2.0.0"
+    "colord": "^2.10.0"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
