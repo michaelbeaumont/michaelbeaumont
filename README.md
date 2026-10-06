@@ -12,7 +12,6 @@ In the past couple of weeks: ![Rust](https://img.shields.io/static/v1?logo=Rust&
     <tr>
     <td align="center"><a href="https://github.com/keyholm"><img width="100" src="https://avatars.githubusercontent.com/u/321847923?v=4" alt=keyholm/></a></td>
 <td align="center"><a href="https://github.com/linux-credentials"><img width="100" src="https://avatars.githubusercontent.com/u/198482973?v=4" alt=linux-credentials/></a></td>
-<td align="center"><a href="https://github.com/kafka-protocol-rs"><img width="100" src="https://avatars.githubusercontent.com/u/294589389?v=4" alt=kafka-protocol-rs/></a></td>
 <td align="center"><a href="https://github.com/privacyguides"><img width="100" src="https://avatars.githubusercontent.com/u/65135197?v=4" alt=privacyguides/></a></td>
 <td align="center"><a href="https://github.com/passkeydeveloper"><img width="100" src="https://avatars.githubusercontent.com/u/101430568?v=4" alt=passkeydeveloper/></a></td>
 <td align="center"><a href="https://github.com/pocket-id"><img width="100" src="https://avatars.githubusercontent.com/u/197418917?v=4" alt=pocket-id/></a></td>
@@ -22,7 +21,6 @@ In the past couple of weeks: ![Rust](https://img.shields.io/static/v1?logo=Rust&
     <tr>
     <td align="center"><strong>keyholm</strong></td>
 <td align="center"><strong>linux-credentials</strong></td>
-<td align="center"><strong>kafka-protocol-rs</strong></td>
 <td align="center"><strong>privacyguides</strong></td>
 <td align="center"><strong>passkeydeveloper</strong></td>
 <td align="center"><strong>pocket-id</strong></td>
