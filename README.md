@@ -12,11 +12,13 @@ In the past couple of weeks: ![Rust](https://img.shields.io/static/v1?logo=Rust&
     <tr>
     <td align="center"><a href="https://github.com/keyholm"><img width="100" src="https://avatars.githubusercontent.com/u/321847923?v=4" alt=keyholm/></a></td>
 <td align="center"><a href="https://github.com/linux-credentials"><img width="100" src="https://avatars.githubusercontent.com/u/198482973?v=4" alt=linux-credentials/></a></td>
+<td align="center"><a href="https://github.com/kafka-protocol-rs"><img width="100" src="https://avatars.githubusercontent.com/u/294589389?v=4" alt=kafka-protocol-rs/></a></td>
 <td align="center"><a href="https://github.com/Kong"><img width="100" src="https://avatars.githubusercontent.com/u/962416?v=4" alt=Kong/></a></td>
     </tr>
     <tr>
     <td align="center"><strong>keyholm</strong></td>
 <td align="center"><strong>linux-credentials</strong></td>
+<td align="center"><strong>kafka-protocol-rs</strong></td>
 <td align="center"><strong>Kong</strong></td>
     </tr>
   </tbody>
